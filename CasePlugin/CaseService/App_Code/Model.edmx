@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="Longbow_TauseefModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="Longbow_TauseefModelStoreContainer">
+          <EntitySet Name="Emails" EntityType="Longbow_TauseefModel.Store.Emails" store:Type="Tables" Schema="dbo" />
+        </EntityContainer>
+        <EntityType Name="Emails">
+          <Key>
+            <PropertyRef Name="Mail_Id" />
+          </Key>
+          <Property Name="Mail_Id" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Case_Id" Type="int" />
+          <Property Name="Entry_Id" Type="nvarchar" MaxLength="1024" />
+          <Property Name="Sender" Type="nvarchar" MaxLength="1024" />
+          <Property Name="Recipient" Type="nvarchar" MaxLength="1024" />
+          <Property Name="Date_Sent" Type="datetime" />
+          <Property Name="Date_Recieved" Type="datetime" />
+          <Property Name="Subject" Type="nvarchar" MaxLength="1024" />
+          <Property Name="Body" Type="nvarchar(max)" />
+          <Property Name="Message_Object" Type="varbinary(max)" />
+          <Property Name="Attachments" Type="bit" />
+        </EntityType>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="Longbow_TauseefModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="Longbow_TauseefEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Emails" EntityType="Longbow_TauseefModel.Email" />
+        </EntityContainer>
+        <EntityType Name="Email">
+          <Key>
+            <PropertyRef Name="Mail_Id" />
+          </Key>
+          <Property Name="Mail_Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Case_Id" Type="Int32" />
+          <Property Name="Entry_Id" Type="String" MaxLength="1024" Unicode="true" FixedLength="false" />
+          <Property Name="Sender" Type="String" MaxLength="1024" Unicode="true" FixedLength="false" />
+          <Property Name="Recipient" Type="String" MaxLength="1024" Unicode="true" FixedLength="false" />
+          <Property Name="Date_Sent" Type="DateTime" />
+          <Property Name="Date_Recieved" Type="DateTime" />
+          <Property Name="Subject" Type="String" MaxLength="1024" Unicode="true" FixedLength="false" />
+          <Property Name="Body" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="Message_Object" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="Attachments" Type="Boolean" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="Longbow_TauseefModelStoreContainer" CdmEntityContainer="Longbow_TauseefEntities">
+          <EntitySetMapping Name="Emails">
+            <EntityTypeMapping TypeName="Longbow_TauseefModel.Email">
+              <MappingFragment StoreEntitySet="Emails">
+                <ScalarProperty Name="Mail_Id" ColumnName="Mail_Id" />
+                <ScalarProperty Name="Case_Id" ColumnName="Case_Id" />
+                <ScalarProperty Name="Entry_Id" ColumnName="Entry_Id" />
+                <ScalarProperty Name="Sender" ColumnName="Sender" />
+                <ScalarProperty Name="Recipient" ColumnName="Recipient" />
+                <ScalarProperty Name="Date_Sent" ColumnName="Date_Sent" />
+                <ScalarProperty Name="Date_Recieved" ColumnName="Date_Recieved" />
+                <ScalarProperty Name="Subject" ColumnName="Subject" />
+                <ScalarProperty Name="Body" ColumnName="Body" />
+                <ScalarProperty Name="Message_Object" ColumnName="Message_Object" />
+                <ScalarProperty Name="Attachments" ColumnName="Attachments" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="Model">
+        <EntityTypeShape EntityType="Longbow_TauseefModel.Email" Width="1.5" PointX="0.75" PointY="0.75" Height="3.1340950520833335" IsExpanded="true" />
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>

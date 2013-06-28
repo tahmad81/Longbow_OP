@@ -1,0 +1,66 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CasePlugin", "CasePlugin\CasePlugin.csproj", "{7797B888-3FAF-4C20-845C-106CB81C5013}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IniFileCs", "IniFileCs\IniFileCs.csproj", "{F88FC7A3-3965-4288-ACB9-FEC17F081A50}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "WebSetup", "WebSetup\WebSetup.vdproj", "{6BAE4115-AFB8-446E-8931-7E00AADDB39E}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "CaseService", "CaseService\", "{DECF9ABE-73FF-4637-981B-B956376EA424}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/CaseService"
+		Debug.AspNetCompiler.PhysicalPath = "CaseService\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\CaseService\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/CaseService"
+		Release.AspNetCompiler.PhysicalPath = "CaseService\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\CaseService\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "49972"
+	EndProjectSection
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "SetupCase", "SetupCase\SetupCase.vdproj", "{2E34B426-C6DB-4936-AB6B-5F9B4BF0F498}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ICasePlugin", "ICasePlugin\ICasePlugin.csproj", "{A509A629-83FD-48EF-B3E5-85A0893FBE96}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7797B888-3FAF-4C20-845C-106CB81C5013}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7797B888-3FAF-4C20-845C-106CB81C5013}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7797B888-3FAF-4C20-845C-106CB81C5013}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7797B888-3FAF-4C20-845C-106CB81C5013}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F88FC7A3-3965-4288-ACB9-FEC17F081A50}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F88FC7A3-3965-4288-ACB9-FEC17F081A50}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F88FC7A3-3965-4288-ACB9-FEC17F081A50}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F88FC7A3-3965-4288-ACB9-FEC17F081A50}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6BAE4115-AFB8-446E-8931-7E00AADDB39E}.Debug|Any CPU.ActiveCfg = Debug
+		{6BAE4115-AFB8-446E-8931-7E00AADDB39E}.Debug|Any CPU.Build.0 = Debug
+		{6BAE4115-AFB8-446E-8931-7E00AADDB39E}.Release|Any CPU.ActiveCfg = Release
+		{DECF9ABE-73FF-4637-981B-B956376EA424}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DECF9ABE-73FF-4637-981B-B956376EA424}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DECF9ABE-73FF-4637-981B-B956376EA424}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{DECF9ABE-73FF-4637-981B-B956376EA424}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{2E34B426-C6DB-4936-AB6B-5F9B4BF0F498}.Debug|Any CPU.ActiveCfg = Debug
+		{2E34B426-C6DB-4936-AB6B-5F9B4BF0F498}.Debug|Any CPU.Build.0 = Debug
+		{2E34B426-C6DB-4936-AB6B-5F9B4BF0F498}.Release|Any CPU.ActiveCfg = Release
+		{A509A629-83FD-48EF-B3E5-85A0893FBE96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A509A629-83FD-48EF-B3E5-85A0893FBE96}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A509A629-83FD-48EF-B3E5-85A0893FBE96}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A509A629-83FD-48EF-B3E5-85A0893FBE96}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
